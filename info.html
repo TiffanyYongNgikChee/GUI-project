@@ -8,7 +8,7 @@
 		
 	<style>
 		.boxHeight1{height: 50px;}
-		.boxHeight2{height: ;}
+		.boxHeight2{height: 300px;}
 		.row{border-left: solid 15px;
 			border-right: solid 15px;
 			border-bottom: solid 15px;}
@@ -23,10 +23,9 @@ code taken and changed from https://getbootstrap.com/docs/4.0/components/navbar/
 	<nav class="navbar navbar-expand navbar-dark bg-dark">
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#">Features</a>
-				<a class="nav-item nav-link" href="#">Pricing</a>
-				<a class="nav-item nav-link" href="#">Disabled</a>
+				<a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
+				<a class="nav-item nav-link" href="checkout.html">Checkout</a>
+				<a class="nav-item nav-link" href="register.html">Register/Sign In</a>
 			</div>
 		</div>
 	</nav>
@@ -36,43 +35,34 @@ Written by Michal Zdziubany
 This adds a container with information about the events and provides the layout of the page
 -->	
 	<div class="container-fluid">
-		<div class="row bg-secondary">
-			<div class="col-lg-3 col-sm-3 col-xs-3">
-				<div class="boxHeight1 bg-secondary text-light text-center"><h1></h1>
-					<h4>Event one</h4>
-				</div>	
-			</div>
-			<div class="col-lg-6 col-sm-6 col-xs-6">
-				<div class="boxHeight1 bg-secondary text-light text-center"><h1></h1>
+		<div class="row bg-dark">
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="boxHeight2 bg-white"><h1></h1>
 					<h4>Main Event</h4>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-3 col-xs-3">
-				<div class="boxHeight1 bg-secondary text-light text-center"><h1></h1>
-					<h4>Event 3</h4>
+					<p>image of event 2</p>
+					<p>some info about event</p>
+					<p>Ticket Cost €79.99</p>
+					Quantity<input id="ticket1"><button id="btn1">ADD</button>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-3 col-sm-3 col-xs-3">
-				<div class="bg-white text-center">
+		<div class="row bg-dark">
+			<div class="col-lg-6 col-sm-6 col-xs-6">
+				<div class="boxHeight2 bg-white">
+					<h4>Event two</h4>
 					<p>image of event 1</p>
 					<p>some info about event</p>
-					<p>cost of tickets</p>
+					<p>Ticket Cost €49.99</p>
+					Quantity<input id="ticket2"><button id="btn2">ADD</button>
 				</div>
 			</div>														
 			<div class="col-lg-6 col-sm-6 col-xs-6">
-				<div class="bg-white text-center">
-					<p>image of event 2</p>
-					<p>some info about event</p>
-					<p>cost of tickets</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-3 col-xs-3">
-				<div class="bg-white text-center">
+				<div class="boxHeight2 bg-white">
+					<h4>Event 3</h4>
 					<p>image of event 3</p>
 					<p>some info about event</p>
-					<p>cost of tickets</p>
+					<p>Ticket Cost €49.99</p>
+					Quantity<input id="ticket3"><button id="btn3">ADD</button>
 				</div>
 			</div>							
 		</div>

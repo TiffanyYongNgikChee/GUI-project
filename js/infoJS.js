@@ -7,10 +7,11 @@ sessionStorage.ticketLimit3 = 4;
 //localStorage.totalTickets1 = 50;
 //localStorage.totalTickets2 = 50;
 //localStorage.totalTickets3 = 50;
-//===================================================================================================================================================
-//Add tickets to cart (Into Session Storage)
+//=================================================================================================================================================================================
+//Add tickets to cart (Into Session Storage) Limits a person to be only able to purchase 4 tickets in one session.
 function add(qty){
-    
+
+//First Event----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     if(qty == 1){
         t = localStorage.totalTickets1;
 
@@ -22,8 +23,9 @@ function add(qty){
             if(num <= y){
 
                 if(num <= t){
+                    
                     sessionStorage.qty1 = document.getElementById("ticket1").value;
-                    x = localStorage.totalTickets1;
+                    t = localStorage.totalTickets1;
         
                     localStorage.totalTickets1 = x - sessionStorage.qty1;
                     sessionStorage.ticketLimit1 = y - sessionStorage.qty1;
@@ -43,6 +45,7 @@ function add(qty){
         }
     }
 
+//Second Event---------------------------------------------------------------------------------------------------------------------------------------------------------------------
     if(qty == 2){
         t = localStorage.totalTickets2;
 
@@ -54,6 +57,7 @@ function add(qty){
             if(num <= y){
 
                 if(num <= t){
+                    
                     sessionStorage.qty2 = document.getElementById("ticket2").value;
                     x = localStorage.totalTickets2;
         
@@ -75,6 +79,7 @@ function add(qty){
         }
     }
 
+//Third Event----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     if(qty == 3){
         t = localStorage.totalTickets3;
 
@@ -86,6 +91,7 @@ function add(qty){
             if(num <= y){
 
                 if(num <= t){
+                    
                     sessionStorage.qty3 = document.getElementById("ticket3").value;
                     x = localStorage.totalTickets3;
         
@@ -107,4 +113,4 @@ function add(qty){
         }
     }
 }
-//===================================================================================================================================================
+//=================================================================================================================================================================================

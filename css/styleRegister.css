@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding-bottom: auto;
+    
+  }
+  .container, input {
+    border-radius: 5px;
+  }
+  form > * {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  form label {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  

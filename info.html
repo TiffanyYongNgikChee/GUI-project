@@ -26,6 +26,7 @@ code taken and changed from https://getbootstrap.com/docs/4.0/components/navbar/
 				<a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
 				<a class="nav-item nav-link" href="checkout.html">Checkout</a>
 				<a class="nav-item nav-link" href="register.html">Register/Sign In</a>
+				<a class="nav-item nav-link mr-auto" href="signIn.html">Sign In</a>
 			</div>
 		</div>
 	</nav>
@@ -53,6 +54,7 @@ This adds a container with information about the events and provides the layout 
 					<p>image of event 2</p>
 					<p>some info about event</p>
 					<p>Ticket Cost €79.99</p>
+					<p id="ticketsLeft1"></p>
 					Quantity<input id="ticket1"><button id="btn1" onClick="add(1)">ADD</button>
 				</div>
 			</div>
@@ -64,6 +66,7 @@ This adds a container with information about the events and provides the layout 
 					<p>image of event 1</p>
 					<p>some info about event</p>
 					<p>Ticket Cost €49.99</p>
+					<p id="ticketsLeft2"></p>
 					Quantity<input id="ticket2"><button id="btn2" onClick="add(2)">ADD</button>
 				</div>
 			</div>														
@@ -73,13 +76,14 @@ This adds a container with information about the events and provides the layout 
 					<p>image of event 3</p>
 					<p>some info about event</p>
 					<p>Ticket Cost €49.99</p>
+					<p id="ticketsLeft3"></p>
 					Quantity<input id="ticket3"><button id="btn3" onClick="add(3)">ADD</button>
 				</div>
 			</div>							
 		</div>
 	</div>
-	<section class="additional-info">
-		<div class="container">
+	<section class="additional-info bg-dark">
+		<div class="container bg-white">
 		  <div class="row">
 			<div class="col-lg-6">
 			  <h2>Contact Us</h2>

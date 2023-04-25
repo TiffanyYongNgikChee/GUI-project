@@ -24,12 +24,16 @@ function SignIn(){
         input2 = document.getElementById("pwd").value;
         input3 = document.getElementById("eml").value;
 
+        detail1 = localStorage.getElementById("uname").value;
+        detail2 = localStorage.getElementById("pwd").value;
+        detail3 = localStorage.getElementById("eml").value;
+
         do{
-                if(input1 == localStorage.getItem("name" + checker)){
+                if(input1 == detail1){
 
-                        if((input2 == localStorage.getItem("pwd" + checker))){
+                        if(input2 == detail2){
 
-                                if((input3 == localStorage.getItem("eml" + checker))){
+                                if(input3 == detail3){
 
 
                                 }

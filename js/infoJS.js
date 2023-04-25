@@ -25,7 +25,7 @@ function add(qty){
                 if(num <= t){
                     
                     sessionStorage.qty1 = document.getElementById("ticket1").value;
-                    t = localStorage.totalTickets1;
+                    x = localStorage.totalTickets1;
         
                     localStorage.totalTickets1 = x - sessionStorage.qty1;
                     sessionStorage.ticketLimit1 = y - sessionStorage.qty1;

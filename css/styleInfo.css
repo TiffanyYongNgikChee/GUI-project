@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body {
-	background-image: url("bg-image.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	
 }
 
 .hero {
     background-color: #ddd;
     padding: 5rem 1rem;
     text-align: center;
+	color: black;
   }
   
   .hero h1 {
@@ -17,6 +17,60 @@ body {
   
   .hero p {
     margin-bottom: 2rem;
+  }
+  .image-container {
+	overflow: hidden;
+	width: 130em; /* Change this to the desired width of your container */
+	height: 30em; /* Change this to the desired height of your container */
+	position: relative;
+	padding: 10em;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	grid-template-columns: 2fr 2fr;  
+  }
+  .image-description {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	color: white;
+	line-height: 1.5;
+	text-align: left;
+	margin-top: 10px;
+  }
+  
+  .image-description li {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 20px;
+	color: whitesmoke;
+	margin-bottom: 5px;
+  }
+  .image-container img {
+	width: 40em;
+	height: 30em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+  
+  .image-container img:not(:first-child) {
+	opacity: 0;
+	transform: translateX(100%);
+  }
+  
+  .image-container:hover img:not(:hover) {
+	opacity: 0;
+	transform: translateX(-100%);
+  }
+  
+  .image-container:hover img:hover {
+	opacity: 1;
+	transform: translateX(0%);
   }
   .container-search {
 	display: flex;
@@ -113,7 +167,7 @@ input[type="submit"] {
 	color: #fff;
 }
 .additional-info {
-	background-color: #f8f9fa;
+	background-color: white;
 	padding: 50px 0;
   }
   
@@ -129,4 +183,46 @@ input[type="submit"] {
   
   .additional-info ul li {
 	margin-bottom: 10px;
+  }
+  footer, footer h2{
+	color:black;
+	background-color:#ddd;
+	text-align: center;
+	align-items: center;
+	padding-top: 20px;
+  }
+  form {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	margin: 0 auto;
+  }
+  
+  label {
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	align-items: center;
+  }
+  
+  input[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+	background-color: #0062cc;
   }

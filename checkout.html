@@ -32,44 +32,60 @@ code taken and changed from https://getbootstrap.com/docs/4.0/components/navbar/
 			<div class="navbar-nav">
 				<a class="nav-item nav-link" href="info.html">Home <span class="sr-only"></span></a>
 				<a class="nav-item nav-link active" href="#">Checkout</a>
-				<a class="nav-item nav-link" href="register.html">Register/Sign In</a>
+				<a class="nav-item nav-link" href="register.html">Register</a>
+				<a class="nav-item nav-link" href="signIn.html">Sign In</a>
 			</div>
 		</div>
 	</nav>
 	
+<!--
+Written by Michal Zdziubany
+This adds a container for the checkout form and the checkout form with validation in the input fields
+-->
 	<div class="container bg-white boxHeight2">
 		<div id="box2">
-			<form>
+			<form action="#">
 				<h3>Checkout</h3>
 				
-				<p>Name:</p>
-				<input id="name">
-					
-				<p>Address Line 1:</p>
-				<input id="address1">
+				<label for="fname">First Name:</label><br>
+				<input type="text" name="fname" id="fname" required>
+				<br><br>
+	  
+				<label for="lname">Last Name:</label><br>
+				<input type="text" name="lname" id="lname" required>
+				<br><br>
+	  
+				<label for="email">Email:</label><br>
+				<input type="email" name="email" id="email" required>
+				<br><br>
 				
-				<p>Address Line 2:</p>
-				<input id="address2">
+				<label for="address1">Address 1:</label><br>
+				<input type="text" name="address1" id="address1" required>
+				<br><br>
 				
-				<p>Eircode:</p>
-				<input id="eircode">
-					
-				<p>Email Address:</p>
-				<input id="email">
-					
-				<p>Promo Code:</p>
-				<input id="promoCode"><br><br>
-					
-				<input type="checkbox">Physical Ticket (Extra €3)<br><br>
-					
-				<p>Costs:</p>
-				<p id="event1Total"></p>
-				<p id="event1Tota2"></p>
-				<p id="event1Tota3"></p>
-				<p id="totalCost"></p>
-					
-				<button type="submit">Submit</button>
+				<label for="address2">Address 2:</label><br>
+				<input type="text" name="address2" id="address2">
+				<br><br>
+				
+				<label for="eircode">Eircode:</label><br>
+				<input type="text" name="eircode" id="eircode" required>
+				<br><br>
+				
+				<label for="promo">Promo:</label><br>
+				<input type="text" name="promo" id="promo">
+				<br><br>
+				
+				<input type="checkbox" onClick="physicalTicket()">Pyshical Ticket (Extra 3€)
+				
+				<p id="price1"></p>
+				<p id="price3"></p>
+				<p id="price3"></p>
+				<p id="physicalTicket">
+				<p id="totalCost">Total: -€</p>
+	  
+				<input type="submit" value="Submit">
 			</form>
+			
 		</div>
 	</div>
 	

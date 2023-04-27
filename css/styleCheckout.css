@@ -1,19 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&display=swap');
+
 body {
-    background-color: #f8f9fa;}
+    background-color: darkblue;}
+.hero {
+    background-image: url('../img/background.jpeg');
+    background-size: cover;
+        padding: 5rem 1rem;
+        text-align: center;
+        color: white;
+        margin-bottom: 30px;
+      }
+      
+.hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      
+.hero p {
+        margin-bottom: 2rem;
+      }
 form {font-family: Arial, sans-serif;
-    font-size: 16px;}
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;}
+
 form input, form select {padding: 10px;
-    border-radius: 5px;}
-form button[type="submit"] {
-    background-color: #007bff;
+    border-radius: 5px;
+    background-color: gainsboro;}
+
+#submitButton{
+    background-color: black;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer; }
-form button[type="submit"]:hover {
-background-color: #0069d9;
+
+#submitButton:hover {
+background-color: yellow;
+color: black;
 }
 form p {margin-bottom: 5px;}
 form input[type="checkbox"] {
@@ -36,7 +67,7 @@ line-height: 1.5;
     margin-top: 20px;
     max-width: 600px;
     padding: 20px;
-    border: solid 1px #ced4da;
+    border: solid 5px #333;
     padding-top: 20px;
 }
 .navbar {
@@ -59,11 +90,113 @@ line-height: 1.5;
 	padding-top: 2rem;
 }
 body {
-    background-image: url('../img/background.jpeg');
-    background-size: cover;
     height: 100%;
     position: absolute;
     width: 100%;
     z-index: -1;
     font-family: 'Open Sans', Arial, sans-serif;
+  }
+  .event {
+    background-color: #f7f7f7;
+    padding: 60px;
+    margin-top: 50px;
+  }
+  
+  .event h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .event-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-date {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .event-date .day {
+    margin-bottom: 10px;
+  }
+  
+  .event-date .month {
+    text-transform: uppercase;
+  }
+  
+  .event-details {
+    max-width: 600px;
+  }
+  
+  .event-details h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .event-details p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #222;
+  }
+  .options {
+    margin-top: 20px;
+  }
+  
+  .options ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .options li {
+    margin-right: 20px;
+  }
+  
+  .options li:last-child {
+    margin-right: 0;
+  }
+  
+  .options a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  .options a:hover {
+    background-color: black;
+    color: yellow;
   }

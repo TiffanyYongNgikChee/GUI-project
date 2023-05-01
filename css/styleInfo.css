@@ -1,7 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 body {
-	
+	font-family: 'Open Sans', sans-serif;
 }
+#website-name{
+		font-size: 36px;
+		color: white;
+		text-align: center;
+		font-family: 'Carter One', cursive;
+}
+
+.btn {
+	background-color: #28a745;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+  }
 
 .hero {
     background-color: #ddd;
@@ -119,6 +134,7 @@ input[type="submit"] {
 }
 
 .container-fluid {
+	padding: 20px;
 	padding-top: 2rem;
 }
 

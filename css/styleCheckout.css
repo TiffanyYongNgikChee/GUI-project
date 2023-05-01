@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 body {
     background-color: darkblue;}
+
+#name{
+      font-size: 36px;
+      color: white;
+      text-align: center;
+      font-family: 'Carter One', cursive;
+  }
+
 .hero {
     background-image: url('../img/background.jpeg');
     background-size: cover;

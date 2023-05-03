@@ -78,16 +78,19 @@ Written by Michal Zdziubany
 This adds a container with information about the events and provides the layout of the page
 -->	
 
-	<div class="container-fluid">
+	<div class="container-fluid ">
 		<div class="row bg-dark">
 			<div class="col-lg-12 col-sm-12 col-xs-12">
 				<div class="boxHeight2 bg-white"><h1></h1>
 					<h4>Main Event</h4>
-					<p>image of event 2</p>
-					<p>some info about event</p>
-					<p>Ticket Cost €79.99</p>
-					<p id="ticketsLeft1"></p>
-					Quantity<input id="ticket1"><button id="btn1" onClick="add(1)">ADD</button>
+					<ul class="list-inline">
+						<li class="list-inline-item">image of event 1</li>
+						<li class="list-inline-item">some info about event</li>
+						<li class="list-inline-item">some info about event</li>
+						<li class="list-inline-item">Ticket Cost €79.99</li>
+						<li class="list-inline-item" id="ticketsLeft1"></li>
+						<li class="list-inline-item">Quantity<input id="ticket1"><button id="btn1" onClick="add(1)">ADD</button></li>
+					</ul>
 				</div>
 			</div>
 		</div>

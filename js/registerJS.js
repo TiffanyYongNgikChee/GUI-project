@@ -1,58 +1,22 @@
 //Stores login credentials in localStorage (Very legal and secure)=================================================================================================================
-//Registering
-localStorage.counter = 0;
-var count = localStorage.counter;
-
+//The code for the counter was from
+//https://linuxhint.com/create-simple-click-counter-using-javascript/#:~:text=To%20create%20a%20simple%20click%20counter%20using%20JavaScript%2C%20you%20can,counter%20to%20reset%20the%20count.
 function Register(){  
+        if (typeof(Storage) !== "undefined") {
+        if (localStorage.count) {
+                localStorage.count = Number(localStorage.count)+1;
+        } else {
+                  localStorage.count = 1;
+                }
+                 num = localStorage.count;
+        }
+
         input1 = document.getElementById("uname").value;
         input2 = document.getElementById("pwd").value;
         input3 = document.getElementById("eml").value;
         
-        localStorage.setItem("name" + count, input1);
-        localStorage.setItem("pass" + count, input2);
-        localStorage.setItem("email" + count, input3);
-
-        count++;
-        localStorage.counter = count;
+        localStorage.setItem("user" + num, input1);
+        localStorage.setItem("pass" + num, input2);
+        localStorage.setItem("email" + num, input3);
 }
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//Signing in
-function SignIn(){
-        localStorage.checker = 0;
-
-        input1 = document.getElementById("uname").value;
-        input2 = document.getElementById("pwd").value;
-        input3 = document.getElementById("eml").value;
-
-        detail1 = localStorage.getElementById("uname").value;
-        detail2 = localStorage.getElementById("pwd").value;
-        detail3 = localStorage.getElementById("eml").value;
-
-        do{
-                if(input1 == detail1){
-
-                        if(input2 == detail2){
-
-                                if(input3 == detail3){
-
-
-                                }
-                                else{
-                                        alert("Incorrect credentials entered! please try again.");
-                                }
-                        }
-                        else{
-                                alert("Incorrect credentials entered! please try again.");
-                        }
-
-                               
-                }
-                else{
-                        alert("Incorrect credentials entered! please try again.");
-                }
-
-                checker++;
-
-        }while(checker <= count)
-}
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//=================================================================================================================================================================================

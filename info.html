@@ -13,6 +13,7 @@
 		.row{border-left: solid 15px;
 			border-right: solid 15px;
 			border-bottom: solid 15px;}
+		ul{list-style-type: none;}
 	</style>
 </head>
 	<body class="bg-dark">
@@ -53,7 +54,7 @@ code taken and changed from https://stackoverflow.com/questions/19733447/bootstr
 	<section class="hero">
 		<h1>Book Your Tickets Today</h1>
 		<p>Get the best seats at your favourite event</p>
-		<a href="#" class="btn">Browse Event</a>
+		<a href="#mainEvent" class="btn">Browse Event</a>
 	  </section>
 	  <p id="search-description">Find out what's on at:</p>
 	  <div class="container-search">
@@ -78,11 +79,11 @@ Written by Michal Zdziubany
 This adds a container with information about the events and provides the layout of the page
 -->	
 
-	<div class="container-fluid ">
+	<div class="container-fluid">
 		<div class="row bg-dark">
 			<div class="col-lg-12 col-sm-12 col-xs-12">
 				<div class="boxHeight2 bg-white"><h1></h1>
-					<h4>Main Event</h4>
+					<h4 id="mainEvent">Main Event</h4>
 					<ul class="list-inline">
 						<li class="list-inline-item">image of event 1</li>
 						<li class="list-inline-item">some info about event</li>
@@ -117,40 +118,36 @@ This adds a container with information about the events and provides the layout 
 			</div>							
 		</div>
 	</div>
-	<section class="additional-info bg-dark">
-		<div class="container bg-white">
-		  <div class="row">
-			<div class="col-lg-6 col-sm-6">
-			  <h2>Contact Us</h2>
-			  <p>You can contact us at:</p>
-			  <ul>
-				<li>Phone: 555-555-5555</li>
-				<li>Email: G123456@atu.ie</li>
-				<li>Address: 123, Atlantic Technology University</li>
-			  </ul>
-			</div>
-			<div class="col-lg-6 col-sm-3">
-			  <h2>Location</h2>
-			  <p>We are located at:</p>
-			  <ul>
-				<li>Address: Galway, Ireland</li>
-				<li>Get directions <a href="#">here</a>.</li>
-			  </ul>
-			</div>
-		  </div>
-		</div>
-	  </section>
+
 
       <footer>
-		<h2>Subscribe to Our Newsletter</h2>
-		<p>Be the first to know about the latest events and special offers</p>
-		<form action="your-email-service-provider-url" method="post">
-		  <label for="name">Name:</label>
-		  <input type="text" id="name" name="name" required>
-		  <label for="email">Email:</label>
-		  <input type="email" id="email" name="email" required>
-		  <input type="submit" value="Subscribe">
-		</form>
+		<ul class="list-inline">
+			<li class="list-inline-item">
+				<ul>
+					<li><h4>Contact Us</h4></li>
+					<li>You can contact us at:</li>
+					<li>Phone: 555-555-5555</li>
+					<li>Email: G123456@atu.ie</li>
+					<li>Address: 123, Atlantic Technology University</li>
+				</ul>
+			</li>
+			<li class="list-inline-item">
+				<ul>
+					<li><h2>Subscribe to Our Newsletter</h2></li>
+					<li>Be the first to know about the latest events and special offers</li>
+					<li>Also receive a discount on your next order</li><br><br>
+				</ul>
+			</li>
+			<li class="list-inline-item">
+				<ul>
+					<li><h4>Location</h4></li>
+					<li>We are located at:</li>
+					<li>Address: Galway, Ireland</li>
+					<li>Get directions <a href="https://www.gmit.ie/locations">here</a>.</li><br>
+				</ul>
+			</li>
+		</ul>
+		<br>
 	  </footer>
 		
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>

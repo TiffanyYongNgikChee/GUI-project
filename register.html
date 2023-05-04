@@ -11,6 +11,13 @@
 		.boxHeight2{height: 75%;}
 		.row{border-left: solid 125px;
 			border-right: solid 125px;}
+		#userName{width: 80%;
+			height: 30px;
+			color: black;}
+		#email{width: 80%;
+			height: 30px;
+			color: black;}
+		#registerBox{padding-bottom: 100px;}
 	</style>
 </head>
 	<body class="bg-dark">
@@ -61,40 +68,20 @@ the form checks for name, password, email and if a checkbox is checked before al
 				</div>					
 		</div>
 
-		<div class="row bg-dark">
+		<div class="row bg-dark" id="registerBox">
 			<div class="">
 				<div class=" ">
-					<div class="container pb-3 col-lg-4 col-xs-8">
+					<div class="container pb-5 col-lg-4 col-xs-8">
 					  <h3 id="title">Register</h3>
-						
-					  <form action="info.html" class="was-validated">
-
-						<div class="mb-3 mt-3">
-						  <label for="uname" class="form-label">Name:</label>
-						  <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required> 
-						  
-						</div>
-
-						<div class="mb-3">
-						  <label for="pwd" class="form-label">Password:</label>
-						  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-						  
-						</div>
-
-						<div class="mb-3">
-						  <label for="pwd" class="form-label">Email:</label>
-						  <input type="email" class="form-control" id="eml" placeholder="Enter email" name="eml" required>
-						  
-						</div>
-
-						<div class="form-check mb-3">
+						<form action="info.html" method="post">
+						  <label for="name">Name:</label> <br>
+						  <input type="text" id="userName" name="name" required><br>
+						  <label for="email">Email:</label> <br>
+						  <input type="email" id="email" name="email" required><br>
 						  <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
 						  <label class="form-check-label" for="myCheck">I agree to the Terms of Conditions.</label>
-						  
-						</div>
-
-						<button type="submit" class="btn btn-dark" id="register" onClick="Register()">Register</button>
-					  </form>
+						  <input type="submit" value="Subscribe">
+						</form>
 					</div>
 				</div>
 			</div>																					

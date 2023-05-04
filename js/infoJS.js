@@ -15,6 +15,9 @@ var a2 = 0;
 var b2 = 0;
 var a3 = 0;
 var b3 = 0;
+sessionStorage.qty1 = 0;
+sessionStorage.qty2 = 0;
+sessionStorage.qty3 = 0;
 
 function add(qty){
 

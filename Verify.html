@@ -29,14 +29,6 @@ code taken and changed from https://stackoverflow.com/questions/19733447/bootstr
 -->	
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="info.html">Home</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Checkout</a>
-				</li>
-			</ul>
 		</div>
 		<div class="mx-auto order-0">
 			<a class="navbar-brand mx-auto" href="#" id="name">Website Name</a>
@@ -45,17 +37,11 @@ code taken and changed from https://stackoverflow.com/questions/19733447/bootstr
 			</button>
 		</div>
 		<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="register.html">Register</a>
-				</li>
-			</ul>
 		</div>
 	</nav>
 	<section class="hero">
 		<h1>To complete your booking</h1>
 		<p>Get the best seats at your favourite event</p>
-		<a href="info.html" class="btn">View More Event</a>
 	  </section>
 	
 <!--
@@ -64,44 +50,41 @@ This adds a container for the checkout form and the checkout form with validatio
 -->
 	<div class="container bg-white boxHeight2">
 		<div id="box2">
-			<form action="Verify.html">
+			<form action="#">
 				<h3>Checkout</h3>
 				
-				<label for="fname">First Name:</label><br>
-				<input type="text" name="fname" id="fname" required>
-				<br><br>
+				<p id="fullName">Name:</p><br>
 	  
-				<label for="lname">Last Name:</label><br>
-				<input type="text" name="lname" id="lname" required>
-				<br><br>
-	  
-				<label for="email">Email:</label><br>
-				<input type="email" name="email" id="email" required>
-				<br><br>
+				<p id="email">Email:</p><br>
 				
-				<label for="address1">Address 1:</label><br>
-				<input type="text" name="address1" id="address1" required>
-				<br><br>
+				<p id="address1">Address:</p><br>
 				
-				<label for="address2">Address 2:</label><br>
-				<input type="text" name="address2" id="address2">
-				<br><br>
+				<p id="address2">Address:</p><br>
 				
-				<label for="eircode">Eircode:</label><br>
-				<input type="text" name="eircode" id="eircode" required>
-				<br><br>
+				<p id="eircode">Eircode:</p><br>
 				
-				<label for="promo">Promo:</label><br>
-				<input type="text" name="promo" id="promo">
-				<br><br>
-				
-				<input type="checkbox" onClick="physicalTicket()">Pyshical Ticket (Extra 3€)
-				
-				<p id="price1"></p>
-				<p id="price2"></p>
-				<p id="price3"></p>
-				<p id="physicalTicket">
+				<p id="physicalTicket">Ticket?</p>
+				<p id="price1">Price for Event1:</p>
+				<p id="price2">Price for Event2:</p>
+				<p id="price3">Price for Event3:</p>
 				<p id="totalCost">Total: -€</p>
+				
+				<label for="address1">Card number</label><br>
+				<input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard1" id="creditCard1" required>
+				-
+				<input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard2" id="creditCard2" required>
+				<input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard3" id="creditCard3" required>
+				-
+				<input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard4" id="creditCard4" required>
+				<br>
+				
+				<label for="address2">Expiry Date</label><br>
+				<input class="inputCard" name="expiry" id="expiry" type="month" required>
+				<br>
+				
+				<label for="cvc">CVC</label><br>
+				<input type="text" name="cvc" id="cvc" maxlength="3" required>
+				<br><br>
 	  
 				<input type="submit" value="Submit" id="submitButton">
 			</form>

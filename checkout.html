@@ -85,7 +85,7 @@ This adds a container for the checkout form and the checkout form with validatio
 				
 				<label for="address2">Address 2:</label><br>
 				<input type="text" name="address2" id="address2">
-				<br><br>
+				<br><br
 				
 				<label for="eircode">Eircode:</label><br>
 				<input type="text" name="eircode" id="eircode" required>
@@ -95,15 +95,9 @@ This adds a container for the checkout form and the checkout form with validatio
 				<input type="text" name="promo" id="promo">
 				<br><br>
 				
-				<input type="checkbox" onClick="physicalTicket()">Pyshical Ticket (Extra 3€)
+				<input type="checkbox" id="checkbox" onClick="checkClick()" />Pyshical Ticket (Extra 3€)
 				
-				<p id="price1"></p>
-				<p id="price2"></p>
-				<p id="price3"></p>
-				<p id="physicalTicket">
-				<p id="totalCost">Total: -€</p>
-	  
-				<input type="submit" value="Submit" id="submitButton">
+				<button type="submit" class="btn btn-dark" id="submitButton" onClick="checkout()">submit</button>
 			</form>
 			
 		</div>

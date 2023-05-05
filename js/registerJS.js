@@ -1,22 +1,16 @@
-//Stores login credentials in localStorage (Very legal and secure)=================================================================================================================
-//The code for the counter was from
-//https://linuxhint.com/create-simple-click-counter-using-javascript/#:~:text=To%20create%20a%20simple%20click%20counter%20using%20JavaScript%2C%20you%20can,counter%20to%20reset%20the%20count.
-function Register(){  
-        if (typeof(Storage) !== "undefined") {
-        if (localStorage.count) {
-                localStorage.count = Number(localStorage.count)+1;
-        } else {
-                  localStorage.count = 1;
-                }
-                 num = localStorage.count;
-        }
+//https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
 
-        input1 = document.getElementById("uname").value;
-        input2 = document.getElementById("pwd").value;
-        input3 = document.getElementById("eml").value;
-        
-        localStorage.setItem("user" + num, input1);
-        localStorage.setItem("pass" + num, input2);
-        localStorage.setItem("email" + num, input3);
-}
-//=================================================================================================================================================================================
+function sub(){
+        function makeid(length) {
+                let result = '';
+                const code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                const codeLength = code.length;
+                let counter = 0;
+                while (counter < length) {
+                  result += code.charAt(Math.floor(Math.random() * codeLength));
+                  counter += 1;
+                }
+                return result;
+            }   
+        localStorage.setItem("promoC", makeid(5));
+    }

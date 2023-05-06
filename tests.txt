@@ -1,0 +1,58 @@
+April 3
+-GitHub repository created for GUI Project
+
+April 12
+-Created basic layout of the Info page (HTML only)
+
+April 16
+-Added folders for css, images and JS on GitHub
+
+April 18
+-Adjusted HTML code for Info page to change layout and to fix scaling problems
+-Created basic layout of Checkout page (HTML only)
+-Created basic layout of Register/Sign in page (HTML only)
+
+April 19
+-Javascript code added to Checkout page so you can add to "Basket"
+
+April 20
+-fixed Javascript code in Checkout page
+
+April 21
+-Javascript code added in Register/Sign in page (Only register part)
+-CSS code was added in Info page and Reigster/Sign in page
+
+April 23
+-Adjusted CSS code for Info page
+-Adjusted HTML code for Info page and Register/Sign in page to change layout
+
+April 25
+-Seperated Register and Sign in into two seperate pages
+-Added a navbar using HTMl to all pages
+-Javascript code was added in Checkout page to calcualte prices
+-Adjusted CSS code to Info page and added CSS code to Checkout page (Images added)
+
+April 27
+-Adjusted CSS code for Checkout page
+
+April 28
+-Adjusted Javascript code in Info page to fix purchasing problems
+
+May 1
+-Adjusted CSS code for CHeckout and Info page, added CSS code for Register and Sign in
+
+May 3
+-Adjusted HTML code for Info page to change the appearance
+-Adjusted HTML code for Register and Sign in page after submitting you would be redirected to Info page
+
+May 4
+-Adjusted Javascript code for Register, Sign in and Checkout page. Register and Sign in was changed to adjust the method of storing and veriying information. Checkout page was adjusted to fix the display of price
+-Sign in page was removed (Javascript problems), Register page was changed into Registering to websites news letter, Adjusted HTML code in Info page to improve footer
+
+May 5
+-Created Verfiy page where you would verify your address and prices would be displayed (would be redirected to this page after Checkout page)
+-Adjusted Javascript code for Checkout page to adjust for changes in new Checkout page, Javascript code created for Verify page and Register page code adjusted to create a promocode
+
+May 6
+-Adjusted CSS code and HTML code for Info page to add an extra event and improve appearance
+-Adjusted Javascript code and HTML code in Verify, Checkout and Info pages to adjust to CSS and HTML changes

@@ -35,12 +35,14 @@ const del = localStorage.getItem("delivery");
 price1 = 79.99 * sessionStorage.qty1;
 price2 = 49.99 * sessionStorage.qty2;
 price3 = 49.99 * sessionStorage.qty3;
+price4 = 109.99 * sessionStorage.qty4;
 
 sessionStorage.setItem("p1", price1);
 sessionStorage.setItem("p2", price2);
 sessionStorage.setItem("p3", price3);
+sessionStorage.setItem("p4", price4);
 
-TotalP = price1 + price2 + price3 + del * 1;
+TotalP = price1 + price2 + price3 + price4 + del * 1;
 
 localStorage.setItem("totalPrice", TotalP)
 }

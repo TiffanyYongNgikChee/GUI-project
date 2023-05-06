@@ -54,7 +54,7 @@ code taken and changed from https://stackoverflow.com/questions/19733447/bootstr
 	<div class="intro">
 		<h1>Book Your Tickets Today</h1>
 		<p>Get the best seats at your favourite event</p>
-		<button><a href="#mainEvent">Browse Event</a></button>
+		<button><a style="text-decoration:none;" href="#mainEvent">Browse Event</a></button>
 	  </div>
 	  <div class="achievements">
 		<div class="work">
@@ -106,6 +106,7 @@ This adds a container with information about the events and provides the layout 
 						<li class="list-inline-item" id="ticketsLeft1"></li>
 						<br>
 						<li class="list-inline-item">Quantity<input id="ticket1"><button id="btn1" onClick="add(1)">ADD</button></li>
+						<p style="color:gray;" id="ticketNum1"></p>
 					</ul>
 				</div>
 			</div>
@@ -124,6 +125,7 @@ This adds a container with information about the events and provides the layout 
 					<p class="event_details">Ticket Cost €49.99</p>
 					<p id="ticketsLeft2"></p>
 					Quantity<input id="ticket2"><button id="btn2" onClick="add(2)">ADD</button>
+					<p style="color:gray;" id="ticketNum2"></p>
 				</div>
 			</div>														
 			<div class="col-lg-6 col-sm-6 col-xs-6">
@@ -140,6 +142,7 @@ This adds a container with information about the events and provides the layout 
 					<p class="event_details">Ticket Cost €49.99</p>
 					<p id="ticketsLeft3"></p>
 					Quantity<input id="ticket3"><button id="btn3" onClick="add(3)">ADD</button>
+					<p style="color:gray;" id="ticketNum3"></p>
 				</div>
 			</div>
 		</div>	
@@ -163,6 +166,7 @@ This adds a container with information about the events and provides the layout 
 						<br>
 						<li class="list-inline-item">
 							Quantity<input id="ticket4"><button id="btn4" onClick="add(4)">ADD</button></li>
+						<p style="color:gray;" id="ticketNum4"></p>
 					</ul>
 				</div>
 			</div>

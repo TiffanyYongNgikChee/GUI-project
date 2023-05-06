@@ -2,11 +2,13 @@
 sessionStorage.ticketLimit1 = 4;
 sessionStorage.ticketLimit2 = 4;
 sessionStorage.ticketLimit3 = 4;
+sessionStorage.ticketLimit4 = 4;
 
 //Uncomment lines below to change number of tickets available
-localStorage.totalTickets1 = 50;
-localStorage.totalTickets2 = 50;
-localStorage.totalTickets3 = 50;
+localStorage.totalTickets1 = 50;    ticknum1 = localStorage.totalTickets1;
+localStorage.totalTickets2 = 50;    ticknum2 = localStorage.totalTickets2;
+localStorage.totalTickets3 = 50;    ticknum3 = localStorage.totalTickets3;
+localStorage.totalTickets4 = 50;    ticknum4 = localStorage.totalTickets4;
 //=================================================================================================================================================================================
 //Add tickets to cart (Into Session Storage) Limits a person to be only able to purchase 4 tickets in one session.
 var a1 = 0;
@@ -15,9 +17,17 @@ var a2 = 0;
 var b2 = 0;
 var a3 = 0;
 var b3 = 0;
+var a4 = 0;
+var b4 = 0;
 sessionStorage.qty1 = 0;
 sessionStorage.qty2 = 0;
 sessionStorage.qty3 = 0;
+sessionStorage.qty4 = 0;
+
+document.getElementById("ticketNum1").innerHTML = "&emsp;&emsp;&emsp;&emsp;" + ticknum1 + " tickets left!";
+document.getElementById("ticketNum2").innerHTML = "&emsp;&emsp;&emsp;&emsp;" + ticknum2 + " tickets left!";
+document.getElementById("ticketNum3").innerHTML = "&emsp;&emsp;&emsp;&emsp;" + ticknum3 + " tickets left!";
+document.getElementById("ticketNum4").innerHTML = "&emsp;&emsp;&emsp;&emsp;" + ticknum4 + " tickets left!";
 
 function add(qty){
 
@@ -44,6 +54,8 @@ if(qty == 1){
                 b1 += a1 * 1;
 
                 sessionStorage.qty1 = b1;
+
+                document.getElementById("ticketNum1").innerHTML = "&emsp;&emsp;&emsp;&emsp;" + (x - num) + " tickets left!";
 
             }
             else{
@@ -83,6 +95,8 @@ if(qty == 1){
                     b2 += a2 * 1;
     
                     sessionStorage.qty2 = b2;
+
+                    document.getElementById("ticketNum2").innerHTML = "&emsp;&emsp;&emsp;&emsp;" + (x - num) + " tickets left!";
                 }
                 else{
                     alert("Sorry, there are not enough tickets available at the moment. There are " + (x - num) + " tickets left.");
@@ -122,6 +136,49 @@ if(qty == 1){
                     b3 += a3 * 1;
     
                     sessionStorage.qty3 = b3;
+
+                    document.getElementById("ticketNum3").innerHTML = "&emsp;&emsp;&emsp;&emsp;" + (x - num) + " tickets left!";
+                }
+                else{
+                    alert("Sorry, there are not enough tickets available at the moment. There are " + (x - num) + " tickets left.");
+                }
+            }
+            else{
+                alert("Sorry, the maximum amount of tickets to purchase is 4");
+            }
+        }
+
+        else{
+
+            alert("Sorry, the maximum amount of tickets to purchase is 4");
+        }
+    }
+
+//Fourth Event---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    if(qty == 4){
+        t = localStorage.totalTickets4;
+
+        num = document.getElementById("ticket4").value;
+
+        if(num <= 4){
+            y = sessionStorage.ticketLimit4;
+
+            if(num <= y){
+
+                if(num <= t){
+                    
+                    a4 = document.getElementById("ticket4").value;
+
+                    x = localStorage.totalTickets4;
+        
+                    localStorage.totalTickets4 = x - a4;
+                    sessionStorage.ticketLimit4 = y - a4;
+
+                    b4 += a4 * 1;
+
+                    sessionStorage.qty4 = b4;
+
+                    document.getElementById("ticketNum4").innerHTML = "&emsp;&emsp;&emsp;&emsp;" + (x - num) + " tickets left!";
                 }
                 else{
                     alert("Sorry, there are not enough tickets available at the moment. There are " + (x - num) + " tickets left.");

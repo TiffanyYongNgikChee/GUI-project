@@ -5,11 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Event Info</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-	<link href="css/styleInfo.css" rel="stylesheet">	
+	 <!-- Additional CSS Files -->
+	<link href="css/styleInfo.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 	<style>
 		.boxHeight1{height: 50px;}
-		.boxHeight2{height: 300px;
-					padding: 10px}
+		.boxHeight2{height: 70em;
+					padding: 10px;}
 		.row{border-left: solid 15px;
 			border-right: solid 15px;
 			border-bottom: solid 15px;}
@@ -34,7 +37,7 @@ code taken and changed from https://stackoverflow.com/questions/19733447/bootstr
 			</ul>
 		</div>
 		<div class="mx-auto order-0">
-			<a class="navbar-brand mx-auto" href="#" id="website-name">Website Name</a>
+			<a class="navbar-brand mx-auto" href="#" id="website-name">Venue Master</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -48,45 +51,60 @@ code taken and changed from https://stackoverflow.com/questions/19733447/bootstr
 		</div>
 	</nav>
 
-	<section class="hero">
+	<div class="intro">
 		<h1>Book Your Tickets Today</h1>
 		<p>Get the best seats at your favourite event</p>
-		<a href="#mainEvent" class="btn">Browse Event</a>
-	  </section>
-	  <p id="search-description">Find out what's on at:</p>
-	  <div class="container-search">
-		<form action="#" method="get">
-			<input type="text" name="search" placeholder="Search...">
-			<input type="submit" value="Go">
-		</form>
-	</div>
-
-    <div class="image-container">
-		<img src="img/Concert.jpeg" alt="Image 1">
-		<img src="img/Hamilton.jpg" alt="Image 2">
-			<ul class="image-description">
-			<p class="image-description">Join now to get:</p>
-			<li>Faster booking</li>
-			<li>Personalised event recommendations</li>
-			<li>Access to special screenings</li>
-			<li>Access to Apple Wallet for your e-tickets</li></ul>
-	</div>
+		<button><a href="#mainEvent">Browse Event</a></button>
+	  </div>
+	  <div class="achievements">
+		<div class="work">
+		  <i class="fas fa-atom"></i>
+		  <p class="work-heading">Reputation</p>
+		  <p class="work-text">You may prefer to purchase from a vendor with a good reputation for reliable service and legitimate ticket sales.</p>
+		</div>
+		<div class="work">
+		  <i class="fas fa-skiing"></i>
+		  <p class="work-heading">Convenience</p>
+		  <p class="work-text">Some vendors may offer more convenient payment options, delivery methods, or other features that make purchasing a ticket easier and more streamlined.</p>
+		</div>
+		<div class="work">
+		  <i class="fas fa-ethernet"></i>
+		  <p class="work-heading">Availability</p>
+		  <p class="work-text">Some ticket sellers may have access to exclusive or limited tickets, so if you're looking to attend a popular or high-demand event, you may need to shop around to find a vendor that has the tickets you want.</p>
+		</div>
+	  </div>
+	  <div class="about-me">
+		<div class="about-me-text">
+		  <h2>About Us</h2>
+		  <p>All ticket sales are final, but tickets are transferable. If you are unable to attend the festival, you may transfer your ticket to someone else. In the event of a cancellation or postponement, we will provide refunds or exchanges as necessary.</p>
+		</div>
+		<img src="img/Hamilton.jpg" alt="me">
+	  </div>
 <!--
 Written by Michal Zdziubany
 This adds a container with information about the events and provides the layout of the page
 -->	
-
+	<hr class="eventBanner">
+	<h1 class="eventBanner">Top Selling</h1>
 	<div class="container-fluid">
 		<div class="row bg-dark">
 			<div class="col-lg-12 col-sm-12 col-xs-12">
-				<div class="boxHeight2 bg-white"><h1></h1>
-					<h4 id="mainEvent">Main Event</h4>
+				<div class="boxHeight2"><h1></h1>
+					<h4 id="mainEvent">Hamilton (Touring) </h4>
 					<ul class="list-inline">
-						<li class="list-inline-item">image of event 1</li>
-						<li class="list-inline-item">some info about event</li>
-						<li class="list-inline-item">some info about event</li>
-						<li class="list-inline-item">Ticket Cost €79.99</li>
+						<li class="list-inline-item"><img src="img/HamiltonEvent.jpeg" alr="mainEvent" width="600px" height="400px" id="hamilton"></li>
+						<p class="event-name">Lin-Manuel Miranda's historical hip hop masterpiece comes to Ireland for the first time </p>
+						<hr>
+						<p class="event_details">The majority of the first half of Hamilton is centred around the American Revolutionary War, which ran from 1775 until 1783 and saw Britain’s 13 US colonies declare independence from the nation. Although the war ended over 200 years ago, parallels are drawn between the world of then and today.</p>
+						<p class="event_details">One hugely memorable example comes in the opening of Yorktown (The World Turned Upside Down), where Hamilton converses with fellow military officer Marquis de Lafayette. “We’re finally on the field, we’ve had quite a run”, with his compatriot and fellow US migrant joining him in declaring, “immigrants, we get the job done”. The moment is rightfully greeted by loud applause and cheers from the audience.</p>
+						<p class="event_details">It underpins this powerful tale with top class technical prowess, from its lighting and costume to its unparalleled choreography and emotionally charged music, spectacularly cementing its place in the upper echelons of musical history.</p>
+						<p class="event_details">Date: 17 September – 16 November 2024</p>
+						<p class="event_details">Time: 12:00</p>
+						<p class="event_details">Location: Bord Gáis Energy Theatre</p>
+						<p class="event_details">Ticket Cost €79.99</p>
+						<br>
 						<li class="list-inline-item" id="ticketsLeft1"></li>
+						<br>
 						<li class="list-inline-item">Quantity<input id="ticket1"><button id="btn1" onClick="add(1)">ADD</button></li>
 					</ul>
 				</div>
@@ -94,26 +112,61 @@ This adds a container with information about the events and provides the layout 
 		</div>
 		<div class="row bg-dark">
 			<div class="col-lg-6 col-sm-6 col-xs-6">
-				<div class="boxHeight2 bg-white">
-					<h4>Event two</h4>
-					<p>image of event 1</p>
-					<p>some info about event</p>
-					<p>Ticket Cost €49.99</p>
+				<div class="boxHeight2">
+					<h4 id="mainEvent">The SpongeBob Musical (Touring)</h4>
+					<p><img src="img/Sponge_Bob.webp" alt="Sponge_Bob_Event" width="550px" height="400px" id="sponge_bob"></p>
+					<p class="event-name">The Spongebob Musical is coming to the Bord Gáis Energy Theatre </p>
+					<hr>
+					<p class="event_details">Who lives in a pineapple under the sea and became the hottest star on Broadway? Why, it's SpongeBob SquarePants! And now he’s ready to ride the wave to the Bord Gáis Energy Theatre to entertain and delight audiences in this brilliant, bright, hilarious and brand-new musical production. Plunge into this stunning all-singing, all-dancing, dynamic stage show! When the citizens of Bikini Bottom discover that a volcano will soon erupt and destroy their humble home, SpongeBob and his friends must come together to save the fate of their undersea world! With lives hanging in the balance and all hope lost, a most unexpected hero rises up. The power of optimism really can save the world!</p>
+					<p class="event_details">Date: 13 May 2023</p>
+					<p class="event_details">Time: 10:00</p>
+					<p class="event_details">Location: Dublin, Ireland - Bord Gais Energy Theatre</p>
+					<p class="event_details">Ticket Cost €49.99</p>
 					<p id="ticketsLeft2"></p>
 					Quantity<input id="ticket2"><button id="btn2" onClick="add(2)">ADD</button>
 				</div>
 			</div>														
 			<div class="col-lg-6 col-sm-6 col-xs-6">
-				<div class="boxHeight2 bg-white">
-					<h4>Event 3</h4>
-					<p>image of event 3</p>
-					<p>some info about event</p>
-					<p>Ticket Cost €49.99</p>
+				<div class="boxHeight2">
+					<h4 id="mainEvent">Florence + The Machine</h4>
+					<p><img src="img/Florence_The_Machine.jpeg" alt="Florence + The Machine Tickets" width="600px" height="420px" id="florence"></p>
+					<p class="event-name">Florence + The Machine announces more Irish dates</p>
+					<hr>
+					<p class="event_details">London pop rock outfit Florence + the Machine burst onto the scene in 2009 with their debut album Lungs which quickly became one of the biggest-selling albums of the year with songs like ‘Kiss with a Fist’, ‘Dog Days Are Over’, and others proving incredibly popular in the UK and US charts.</p>
+					<p class="event_details">The following year, the band were back in the studio working on their sophomore record Ceremonials which was released in 2011. The album featured a number of chart-topping singles including ‘Shake It Out’, ‘No Light, No Light’, and ‘Never Let Me Go’.</p>
+					<p class="event_details">Date: 26 June 2023</p>
+					<p class="event_details">Time: 18:00</p>
+					<p class="event_details">Location: Musgrave Park Tramore Rd Cork, Ireland</p>
+					<p class="event_details">Ticket Cost €49.99</p>
 					<p id="ticketsLeft3"></p>
 					Quantity<input id="ticket3"><button id="btn3" onClick="add(3)">ADD</button>
 				</div>
-			</div>							
-		</div>
+			</div>
+		</div>	
+		<div class="row bg-dark">
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="boxHeight2"><h1></h1>
+					<h4 id="mainEvent">Blackpink</h4>
+					<ul class="list-inline">
+						<li class="list-inline-item"><img src="img/Blackpink.jpeg" alr="Event4" width="700px" height="400px" id="blackpink"></li>
+						<p class="event-name">BLACKPINK - BST The Ultimate ALL Terrace Accor Live Limitless</p>
+						<hr>
+						<p class="event_details">London’s festival American Express presents BST Hyde Park announces that the global superstars and unstoppable K-pop trailblazers, BLACKPINK will join the capital’s biggest festival bill on Sunday 2nd July. Once again making history, BLACKPINK will become the first K-pop act to headline a major UK festival. The South Korean quartet join previously announced Bruce Springsteen and the E Street Band, Billy Joel and P!nk on the BST Hyde Park billing for their London festival debut. Over the course of their 6 year career, BLACKPINK have released 2 studio albums, 3 EPs and have collaborated with fellow global superstars, from Lady Gaga to Cardi B, Dua Lipa and Selena Gomez. - Comprised of members JISOO, JENNIE, ROSÉ and LISA, the group have earned acclaim by becoming the #1 most subscribed act on YouTube (with over 80M) and earning their status as the most-followed girl group on Spotify. They’ve continued to smash their own boundary-defying records with the release of BORN PINK, debuting at #1 on the Billboard 200 in the US, the highest-charting album by a girl group in over a decade. BORN PINK also reached #1 on the UK Official Album Charts, the first ever K-pop girl group to achieve this.</p>
+						<p class="event_details">With their countless record breaking hits, BLACKPINK have taken the world by storm. Single ‘SHUT DOWN’ from latest album BORN PINK launched at #1 on the Billboard Global Charts, and previously released single ‘Pink Venom’ made history as the biggest release this decade by a female group or solo artist. At over 269M views, the record-breaking ‘Pink Venom’ was YouTube’s biggest debut of 2022, amassing 90.4M views within the first 24 hours.</p>
+						<br>
+						<p class="event_details">Date: 02 July 2023</p>
+						<p class="event_details">Time: 17:00</p>
+						<p class="event_details">Location: London, Hyde Park</p>
+						<p class="event_details">Ticket Cost €109.99</p>
+						<br>
+						<li class="list-inline-item" id="ticketsLeft1"></li>
+						<br>
+						<li class="list-inline-item">
+							Quantity<input id="ticket4"><button id="btn4" onClick="add(4)">ADD</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>						
 	</div>
 
 

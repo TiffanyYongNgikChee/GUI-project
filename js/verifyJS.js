@@ -3,8 +3,8 @@ const e2 = sessionStorage.getItem("p2");
 const e3 = sessionStorage.getItem("p3");
 const e4 = sessionStorage.getItem("p4");
 const del = localStorage.getItem("delivery");
-const promC = localStorage.getItem("promoC");
-const codeP = localStorage.getItem("pCode");
+const rCode = localStorage.getItem("promoC");
+const fCode = localStorage.getItem("pCode");
 
 const fname = localStorage.getItem("fName");
 const lname = localStorage.getItem("lName");
@@ -12,7 +12,7 @@ const email = localStorage.getItem("email");
 const address1 = localStorage.getItem("address1");
 const address2 = localStorage.getItem("address2");
 const eircode = localStorage.getItem("eircode");
-const totalP = localStorage.getItem("totalPrice");
+totalP = localStorage.getItem("totalPrice");
 
 document.getElementById("fullName").innerHTML = "Name: " + fname + " " + lname;
 document.getElementById("email").innerHTML = "Email: " + email;
@@ -23,7 +23,27 @@ document.getElementById("price1").innerHTML = "Event1: €" + e1;
 document.getElementById("price2").innerHTML = "Event2: €" + e2;
 document.getElementById("price3").innerHTML = "Event3: €" + e3;
 document.getElementById("price4").innerHTML = "Event4: €" + e4;
-if(del > 0){
-    document.getElementById("del").innerHTML = "delivery: €" + del;
+
+if(fCode == rCode){
+
+    if(del > 0){
+        document.getElementById("del").innerHTML = "delivery: €" + del;
+    }
+    reduce = (totalP * 0.1).toFixed(2);
+
+    sessionStorage.setItem("reduce", reduce);
+
+    red = sessionStorage.getItem("reduce");
+
+    document.getElementById("del").innerHTML ="Total: €" + totalP + "<br>Promo code: -€" + red;
+    document.getElementById("totalCost").innerHTML = "New Total: €" + (totalP * 0.9).toFixed(2);
+
+    localStorage.removeItem("promoC")
 }
-document.getElementById("totalCost").innerHTML = "Total: €" + totalP;
+else if(fCode !== rCode){
+    if(del > 0){
+        document.getElementById("del").innerHTML = "delivery: €" + del;
+    }
+
+    document.getElementById("totalCost").innerHTML = "Total: €" + totalP;
+}

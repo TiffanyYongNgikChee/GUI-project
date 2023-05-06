@@ -13,4 +13,8 @@ function sub(){
                 return result;
             }   
         localStorage.setItem("promoC", makeid(5));
+
+        x = localStorage.getItem("promoC");
+
+        alert("Your Promo code is " + x);
     }

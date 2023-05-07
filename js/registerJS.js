@@ -1,5 +1,5 @@
-//https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
-
+//This code was made using https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
+//Once customer clicks subscribe a random 5 character code is generated
 function sub(){
         function makeid(length) {
                 let result = '';
@@ -11,10 +11,12 @@ function sub(){
                   counter += 1;
                 }
                 return result;
-            }   
+            }
+        //Code is then stored into localStorage
         localStorage.setItem("promoC", makeid(5));
-
+        
+        //Tells you what your promo code is
         x = localStorage.getItem("promoC");
-
+          
         alert("Your Promo code is " + x);
     }

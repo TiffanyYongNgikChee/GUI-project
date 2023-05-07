@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Event Info</title>
+	<title>Checkout</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<!-- Written by Tiffany Additional CSS Files -->
 	<link rel="stylesheet" href="css/styleCheckout.css">
 	<style>
 		.boxHeight1{height: 10px;}
@@ -17,7 +18,14 @@
 			grid-template-columns: 1fr;
 			grid-gap: 4px;
 			width: 50%;
-			margin-top: 10px;
+			margin: 0 auto;
+			margin-top: 20px;
+			max-width: 600px;
+			padding: 20px;
+			border: solid 5px #333;
+			padding-top: 20px;
+			height: 1000px;
+			background-color:#959595;
 		}
 	</style>
 </head>
@@ -62,10 +70,12 @@ code taken and changed from https://stackoverflow.com/questions/19733447/bootstr
 Written by Michal Zdziubany
 This adds a container for the checkout form and the checkout form with validation in the input fields
 -->
-	<div class="container bg-white boxHeight2">
+	<div class="container boxHeight2">
 		<div id="box2">
-			<form action="Verify.html">
+			<form action="Verify.html" id="form-checkout">
 				<h3>Checkout</h3>
+				<hr>
+				<h5>Contact Information: </h5><br>
 				
 				<label for="fname">First Name:</label><br>
 				<input type="text" name="fname" id="fname" required>
@@ -103,13 +113,16 @@ This adds a container for the checkout form and the checkout form with validatio
 		</div>
 	</div>
 	<section class="event">
-		<div class="container">
+		<!-- Written by Tiffany. The event-info div contains two child divs with classes "event-date" and "event-details" respectively -->
+		<div class="container-additonal-information">
 		  <h2>RELATED EVENTS</h2>
 		  <div class="event-info">
+			<!-- Written by Tiffany. The event-date div displays the day and month of the event -->
 			<div class="event-date">
 			  <span class="day">22</span>
 			  <span class="month">May</span>
 			</div>
+			<!-- Written by Tiffany. The event-details div displays the name and description of the event, and a "Register Now" button that links to the registration page -->
 			<div class="event-details">
 			  <h3>All you need to know about Hamilton</h3>
 			  <p>Hamilton is the story of America’s Founding Father Alexander Hamilton, an immigrant from the West Indies who became George Washington’s right-hand man during the Revolutionary War and helped shape the very foundations of the America we know today. The score blends hip-hop, jazz, blues, rap, R&B and Broadway – the story of America then, as told by America now.</p>
@@ -118,6 +131,7 @@ This adds a container for the checkout form and the checkout form with validatio
 		  </div>
 		</div>
 	  </section>
+	  <!-- Written by Tiffany. The list is an unordered list with each list item containing an anchor tag-->
 	  <div class="options">
 		<ul>
 		  <li><a href="#">Need Help</a></li>

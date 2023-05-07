@@ -1,22 +1,26 @@
-/* Written by Tiffany. CSS for Checkout.html*/
+/* Written by Tiffany. CSS for Verify.html*/
 
 /* Import Google Font for text */
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Noto+Sans:wght@500&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Carlito:wght@700&family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 body {
     background-color: darkblue;
-    font-family: 'Source Sans Pro', sans-serif;}
+    font-family: 'Anton', sans-serif;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    font-family: 'Open Sans', Arial, sans-serif;}
 
- /* for the website name */
+/* for the website name */
 #name{
       font-size: 36px;
       color: white;
       text-align: center;
       font-family: 'Carter One', cursive;
   }
-
-  /* sets the styles for the hero section, including the background image, padding, text alignment, color, and margin bottom. */
+/* sets the styles for the hero section, including the background image, padding, text alignment, color, and margin bottom. */
 .hero {
     background-image: url('../img/background.jpeg');
     background-size: cover;
@@ -29,7 +33,6 @@ body {
 .hero h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
-        font-family: 'Be Vietnam Pro', sans-serif;
       }
       
 .hero p {
@@ -37,9 +40,15 @@ body {
       }
 
 /* The following CSS styles apply to form inputs and selects */
+h1{
+  font-family: 'Carlito', sans-serif;
+}
+h5{
+  font-family: 'Roboto', sans-serif;
+}
 form {font-family: Arial, sans-serif;
     font-size: 16px;
-    background-color: white;
+    background-color: #f8f8f8;;
     color: black;
     font-family: 'Playfair Display', serif;
     border: 1px solid darkslategrey;
@@ -49,7 +58,7 @@ form {font-family: Arial, sans-serif;
 
 form input, form select {padding: 10px;
     border-radius: 5px;
-    background-color: white}
+    background-color: white;}
 
 #submitButton{
     background-color: black;
@@ -72,12 +81,11 @@ line-height: 1.5;
 }
 
 .boxHeight1{height: 50px;}
-.boxHeight2{height: 750px;}
+.boxHeight2{height: 1000px;}
 .row{border-left: solid 15px;
     border-right: solid 15px;
     border-bottom: solid 15px;}
-
-.container-additional-information{
+.container{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 4px;
@@ -90,7 +98,10 @@ line-height: 1.5;
     padding-top: 20px;
 }
 
-/* sets the styles for the hero section, including the background image, padding, text alignment, color, and margin bottom. */
+/*
+This code defines a style for a navigation bar with class "navbar".
+When a link with the "nav-link" class is hovered over, the text color changes to the same golden yellow color (#ffcc00) used for the border.
+*/
 .navbar {
 	background-color: #333;
 	border-bottom: solid 5px #ffcc00;
@@ -110,83 +121,7 @@ line-height: 1.5;
 .container-fluid {
 	padding-top: 2rem;
 }
-body {
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    font-family: 'Open Sans', Arial, sans-serif;
-  }
-  .event {
-    background-color: #f7f7f7;
-    padding: 60px;
-    margin-top: 50px;
-  }
-  
-  .event h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .event-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .event-date {
-    background-color: #fff;
-    border: 2px solid #333;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    margin-right: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .event-date .day {
-    margin-bottom: 10px;
-  }
-  
-  .event-date .month {
-    text-transform: uppercase;
-  }
-  
-  .event-details {
-    max-width: 600px;
-  }
-  
-  .event-details h3 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .event-details p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #222;
-  }
+/* This code defines a style for a group of options with class "options". */
   .options {
     margin-top: 20px;
   }
@@ -221,8 +156,25 @@ body {
     background-color: black;
     color: yellow;
   }
-h5{
-  font-family: 'Noto Sans', sans-serif;
-}
-#form-checkout{
-  background-color: #f8f8f8;}
+
+  /*This code defines styles for displaying credit card logos, including Visa and Mastercard logos. */
+  .card-logos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .card-logo {
+    margin: 0 20px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* The background image for the Visa logo is specified using a URL, and the same is done for the Mastercard logo.*/
+  .card-logo-visa {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1280px-Visa_Inc._logo.svg.png');
+  }
+  .card-logo-mastercard {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1200px-Mastercard-logo.svg.png');
+  }

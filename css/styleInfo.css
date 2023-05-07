@@ -1,15 +1,23 @@
+/* Written by Tiffany. CSS for Info.html*/
+
+/* Import Google Font for text */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quintessential&family=Ultra&display=swap');
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+
+/* for the website name */
 #website-name{
 		font-size: 36px;
 		color: white;
 		text-align: center;
 		font-family: 'Carter One', cursive;
 }
+
+/* The following CSS styles apply to form inputs and selects */
 input[type="text"] {
 	padding: 10px;
 	border-radius: 5px;
@@ -30,6 +38,7 @@ input[type="submit"] {
 	outline: none;
 }
 
+/* sets the styles for the hero section, including the background image, padding, text alignment, color, and margin bottom. */
 .navbar {
 	background-color: #333;
 	border-bottom: solid 5px #ffcc00;
@@ -99,24 +108,8 @@ input[type="submit"] {
 	background-color: #333;
 	color: #fff;
 }
-.additional-info {
-	background-color: white;
-	padding: 50px 0;
-  }
-  
-  .additional-info h2 {
-	margin-bottom: 20px;
-  }
-  
-  .additional-info ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  .additional-info ul li {
-	margin-bottom: 10px;
-  }
+
+/* The CSS code defines the styling for a footer element and its nested h2 element.*/
   footer, footer h2{
 	color:black;
 	background-color:#ddd;
@@ -124,19 +117,19 @@ input[type="submit"] {
 	align-items: center;
 	padding-top: 20px;
   }
+
+  /* The following CSS styles apply to form inputs and selects */
   form {
 	display: flex;
 	flex-direction: column;
 	max-width: 500px;
 	margin: 0 auto;
   }
-  
   label {
 	font-weight: bold;
 	margin-bottom: 5px;
 	color: #fff;
   }
-  
   input[type="text"],
   input[type="email"] {
 	padding: 10px;
@@ -146,7 +139,6 @@ input[type="submit"] {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	align-items: center;
   }
-  
   input[type="submit"] {
 	background-color: #007bff;
 	color: #fff;
@@ -155,10 +147,11 @@ input[type="submit"] {
 	border-radius: 5px;
 	cursor: pointer;
   }
-  
   input[type="submit"]:hover {
 	background-color: #0062cc;
   }
+
+  /* The following code represents the banner section of the event webpage's homepage. This section is located at the top of the page and features a large heading with a call-to-action message, a short description of the service being offered, and a button that links to the main event section of the webpage.*/
   .intro {
 	display: flex;
 	flex-direction: column;
@@ -171,7 +164,6 @@ input[type="submit"] {
 	background-position: center;
 	background-repeat: no-repeat;
   }
-
   .intro h1 {
 	font-family: sans-serif;
 	font-size: 60px;
@@ -180,14 +172,12 @@ input[type="submit"] {
 	text-transform: uppercase;
 	margin: 0;
   }
-
   .intro p {
 	font-size: 20px;
 	color: #d1d1d1;
 	text-transform: uppercase;
 	margin: 20px 0;
   }
-
   .intro button {
 	background-color: #5edaf0;
 	color: #000;
@@ -200,13 +190,13 @@ input[type="submit"] {
 	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
   }
 
-  .achievements {
+  /* The following code represents a section with three different works related to purchasing tickets. Each work has an icon, a heading, and a text describing a specific aspect to consider when choosing a ticket vendor. */
+   .achievements {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 40px 80px;
   }
-
   .achievements .work {
 	display: flex;
 	flex-direction: column;
@@ -214,7 +204,6 @@ input[type="submit"] {
 	align-items: center;
 	padding: 0 40px;
   }
-
   .achievements .work i {
 	width: fit-content;
 	font-size: 50px;
@@ -223,20 +212,19 @@ input[type="submit"] {
 	border: 2px solid #333333;
 	padding: 12px;
   }
-
   .achievements .work .work-heading {
 	font-size: 20px;
 	color: white;
 	text-transform: uppercase;
 	margin: 10px 0;
   }
-
   .achievements .work .work-text {
 	font-size: 15px;
 	color: white;
 	margin: 10px 0;
   }
 
+  /* The following code represents the "About Us" section of the webpage. */
   .about-me {
 	display: flex;
 	justify-content: center;
@@ -244,21 +232,18 @@ input[type="submit"] {
 	padding: 40px 80px;
 	border-top: 2px solid #eeeeee;
   }
-
   .about-me img {
 	width: 500px;
 	max-width: 100%;
 	height: auto;
 	border-radius: 10px;
   }
-
   .about-me-text h2 {
 	font-size: 30px;
 	color: white;
 	text-transform: uppercase;
 	margin: 0;
   }
-
   .about-me-text p {
 	font-size: 15px;
 	color: white;
@@ -268,6 +253,7 @@ input[type="submit"] {
 	color: #fff;
 	text-align: center;
   }
+
 /* Event details CSS */
 #mainEvent {
 	font-size: 30px;
@@ -284,7 +270,9 @@ input[type="submit"] {
 	font-size: 30px;
 	font-family: 'Playfair Display', serif;
   }
-#hamilton {
+
+  /* CSS code for image hover effect on four elements with their IDs. On hover, the image of each element changes by replacing the content property with a new URL. The hover effect has a transition property that makes it smoother and more gradual.*/
+  #hamilton {
 	transition: all 0.3s ease-in-out;
   }
   

@@ -1,3 +1,5 @@
+//Code was written Wilson Song
+
 //=================================================================================================================================================================================
 //The code to check whether the checkbox was checked taken and altered from https://linuxhint.com/checkbox-onclick-event-in-javascript/
 

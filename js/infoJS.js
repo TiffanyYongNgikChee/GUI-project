@@ -1,3 +1,5 @@
+//Code was written Wilson Song
+
 //Maximum amount of tickets allowed per session
 sessionStorage.ticketLimit1 = 4;
 sessionStorage.ticketLimit2 = 4;

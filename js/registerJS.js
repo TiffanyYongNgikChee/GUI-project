@@ -1,3 +1,5 @@
+//Code was written Wilson Song
+
 //This code was made using https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
 //Once customer clicks subscribe a random 5 character code is generated
 function sub(){

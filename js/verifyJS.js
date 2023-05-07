@@ -1,3 +1,5 @@
+//Code was written Wilson Song
+
 //Assigning sessionStorage prices into variables
 const e1 = sessionStorage.getItem("p1");
 const e2 = sessionStorage.getItem("p2");
